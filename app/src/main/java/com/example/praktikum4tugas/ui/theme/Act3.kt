@@ -109,3 +109,5 @@ fun ActivitasPertama() {
             warna = R.color.card_3_bg
         )
 
+        Spacer(modifier = Modifier.weight(1f))
+
