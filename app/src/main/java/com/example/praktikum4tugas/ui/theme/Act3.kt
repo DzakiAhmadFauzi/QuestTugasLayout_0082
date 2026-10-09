@@ -111,3 +111,17 @@ fun ActivitasPertama() {
 
         Spacer(modifier = Modifier.weight(1f))
 
+        Text(
+            text = stringResource(R.string.copy),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(
+                    vertical = dimensionResource(R.dimen.footer_vertical_padding)
+                ),
+            fontSize = dimensionResource(R.dimen.footer_text_size).value.sp,
+            color = colorResource(R.color.text_title),
+            textAlign = TextAlign.Center
+        )
+    }
+}
+
