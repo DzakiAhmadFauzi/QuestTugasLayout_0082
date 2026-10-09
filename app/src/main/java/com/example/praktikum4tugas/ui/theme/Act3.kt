@@ -144,3 +144,86 @@ fun CardMahasiswa(
         ).value.sp
     }
 
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(dimensionResource(R.dimen.card_height)),
+        shape = RoundedCornerShape(
+            dimensionResource(R.dimen.card_corner_radius)
+        ),
+        colors = CardDefaults.cardColors(
+            containerColor = colorResource(warna)
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(dimensionResource(R.dimen.card_padding)),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = stringResource(R.string.logo_description),
+                modifier = Modifier.size(
+                    dimensionResource(R.dimen.card_logo_size)
+                )
+            )
+
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(
+                        horizontal = dimensionResource(
+                            R.dimen.text_horizontal_padding
+                        )
+                    ),
+                horizontalAlignment = Alignment.Start,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = nama,
+                    modifier = Modifier.fillMaxWidth(),
+                    fontSize = ukuranNama,
+                    fontFamily = if (khususDzaki) {
+                        FontFamily.Cursive
+                    } else {
+                        FontFamily.Default
+                    },
+                    fontWeight = if (khususDzaki) {
+                        FontWeight.Normal
+                    } else {
+                        FontWeight.Bold
+                    },
+                    color = Color.White,
+                    textAlign = TextAlign.Start
+                )
+
+                Spacer(
+                    modifier = Modifier.height(
+                        dimensionResource(R.dimen.text_spacing)
+                    )
+                )
+
+                Text(
+                    text = alamat,
+                    modifier = Modifier.fillMaxWidth(),
+                    fontSize = dimensionResource(
+                        R.dimen.student_address_size
+                    ).value.sp,
+                    fontWeight = FontWeight.Normal,
+                    color = colorResource(R.color.text_white),
+                    textAlign = TextAlign.Start
+                )
+            }
+
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = stringResource(R.string.logo_description),
+                modifier = Modifier.size(
+                    dimensionResource(R.dimen.card_logo_size)
+                )
+            )
+        }
+    }
+}
