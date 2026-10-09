@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Praktikum4Tugas</string>
+    <string name="prodi">Teknologi Informasi</string>
+    <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="logo_description">Logo UMY</string>
+    <string name="nama_1">Dzaki Ahmad</string>
+    <string name="alamat_1">Bekasi, Jawa Barat</string>
+    <string name="nama_2">Fathur Rahman</string>
+    <string name="alamat_2">Sumedang, Jawa Barat</string>
+    <string name="nama_3">Bima Eka</string>
+    <string name="alamat_3">Wonosobo, Jawa Tengah</string>
+    <string name="nama_4">Haidar Yahya</string>
+    <string name="alamat_4">Semarang, Jawa Tengah</string>
+
+    <string name="copy">Copyright, 2026</string>
+</resources>
