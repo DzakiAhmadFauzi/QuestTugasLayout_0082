@@ -125,3 +125,10 @@ fun ActivitasPertama() {
     }
 }
 
+@Composable
+fun CardMahasiswa(
+    nama: String,
+    alamat: String,
+    warna: Int,
+    khususDzaki: Boolean = false
+) {
