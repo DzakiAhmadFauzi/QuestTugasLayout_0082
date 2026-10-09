@@ -85,3 +85,9 @@ fun ActivitasPertama() {
             warna = R.color.card_1_bg
         )
 
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.card_spacing)
+            )
+        )
+
