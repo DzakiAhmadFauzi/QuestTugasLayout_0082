@@ -35,3 +35,11 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ActivitasPertama() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(colorResource(R.color.background_app))
+            .windowInsetsPadding(WindowInsets.statusBars)
+            .padding(dimensionResource(R.dimen.screen_padding)),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
