@@ -43,3 +43,12 @@ fun ActivitasPertama() {
             .padding(dimensionResource(R.dimen.screen_padding)),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Text(
+            text = stringResource(R.string.prodi),
+            modifier = Modifier.fillMaxWidth(),
+            fontSize = dimensionResource(R.dimen.header_title_size).value.sp,
+            fontWeight = FontWeight.Bold,
+            color = colorResource(R.color.text_title),
+            textAlign = TextAlign.Center
+        )
+
