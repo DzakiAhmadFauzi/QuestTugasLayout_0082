@@ -73,3 +73,9 @@ fun ActivitasPertama() {
             khususDzaki = true
         )
 
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.card_spacing)
+            )
+        )
+
