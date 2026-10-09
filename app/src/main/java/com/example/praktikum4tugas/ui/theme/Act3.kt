@@ -132,3 +132,15 @@ fun CardMahasiswa(
     warna: Int,
     khususDzaki: Boolean = false
 ) {
+    val density = LocalDensity.current
+
+    val ukuranNama: TextUnit = with(density) {
+        dimensionResource(
+            if (khususDzaki) {
+                R.dimen.dzaki_name_size
+            } else {
+                R.dimen.student_name_size
+            }
+        ).value.sp
+    }
+
