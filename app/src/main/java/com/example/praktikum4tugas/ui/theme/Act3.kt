@@ -60,3 +60,9 @@ fun ActivitasPertama() {
             textAlign = TextAlign.Center
         )
 
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.header_spacing)
+            )
+        )
+
