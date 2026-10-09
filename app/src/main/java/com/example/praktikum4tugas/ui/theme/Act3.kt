@@ -79,3 +79,9 @@ fun ActivitasPertama() {
             )
         )
 
+        CardMahasiswa(
+            nama = stringResource(R.string.nama_2),
+            alamat = stringResource(R.string.alamat_2),
+            warna = R.color.card_1_bg
+        )
+
