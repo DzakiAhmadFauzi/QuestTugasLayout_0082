@@ -52,3 +52,11 @@ fun ActivitasPertama() {
             textAlign = TextAlign.Center
         )
 
+        Text(
+            text = stringResource(R.string.univ),
+            modifier = Modifier.fillMaxWidth(),
+            fontSize = dimensionResource(R.dimen.header_subtitle_size).value.sp,
+            color = colorResource(R.color.text_title),
+            textAlign = TextAlign.Center
+        )
+
